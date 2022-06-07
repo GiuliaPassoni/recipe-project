@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import React, {useEffect, useState} from "react";
 import Recipe from "./Recipe";
 import filters from "./filters";
@@ -71,24 +71,30 @@ const App = () => {
     return (
 
         <div className='App'>
-            <h1>My first recipe filter!</h1>
+            <h1 className='title'>Recipe Filter</h1>
           <form onSubmit={getSearch} className='search-form'>
+              <p className='filter-text-1'>Input an ingredient:</p>
               <input
               className='search-bar'
               type='text'
               value={search}
               onChange={updateSearch}
+              placeholder='e.g. lemon'
               />
+              <p className='filter-text-1'>Filter by:</p>
               {/*ideally health would be checkboxes...*/}
               {/*TODO: checkboxes instead*/}
+              <p className='filer-text'>Health</p>
               <select className='filter health' onChange={(e) => {setHealth(e.target.value)}}>
                   {filters.health.map(item =>
                       <option value={item}>{item}</option>)}
               </select>
+              <p className='filer-text'>Diet</p>
               <select className='filter diet' onChange={(e) => {setDiet(e.target.value)}}>
                   {filters.diet.map(item =>
                       <option value={item}>{item}</option>)}
               </select>
+              <p className='filer-text'>Meal type</p>
               <select className='filter meal' onChange={(e) => {setMeal(e.target.value)}}>
                   {filters.meal.map(item =>
                       <option value={item}>{item}</option>)}
@@ -119,6 +125,7 @@ const App = () => {
                         sourceurl={recipe.recipe.url}/>
                 ))}
             </div>
+            <footer>Coded by Giulia Passoni 2022</footer>
         </div>
     );
 }
