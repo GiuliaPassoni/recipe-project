@@ -15,6 +15,7 @@ const App = () => {
     //So, we also need another state to run the search with the final input, and will only be used after submitting the form
     const [query, setQuery] = useState('')
 
+
     //for filters:
     const [diet, setDiet] = useState('');
     const [health, setHealth] = useState('');

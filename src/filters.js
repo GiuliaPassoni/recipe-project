@@ -8,6 +8,7 @@ const filters={
     meal:[
         '','breakfast','lunch','dinner','snack','teatime'
     ]
+
 }
 
 export default filters;
