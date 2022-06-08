@@ -69,16 +69,23 @@ form{
     margin:1%;
   }
 
-
-
-  button{
-    display: block;
+  .buttons{
+    width:20%;
     margin: 20px auto;
-    margin-bottom:0;
+    display:flex;
+    flex-direction:column;
+  }
+
+  .search-btn, .reset-btn{
+    margin-bottom:10px;
     padding: .5rem;
     border-radius:10px;
     border: none;
     background-color: $green-bright;
+  }
+  .reset-btn{
+    background-color: #fab387;
+    margin-bottom: -20px;
   }
 }
 
@@ -152,7 +159,10 @@ footer{
     width:70%;
     margin:auto;
   }
-
+  .buttons{
+    width:20%;
+    max-width:100px;
+  }
   .recipes{
     //border:1px solid black;
     width:80%;

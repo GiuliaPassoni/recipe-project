@@ -69,6 +69,11 @@ const App = () => {
     //     setSearch('');
     }
 
+    const reset = () =>{
+        setSearch('');
+    }
+
+
     return (
 
         <div className='App'>
@@ -110,11 +115,18 @@ const App = () => {
               {/*        Lunch*/}
               {/*    </option>*/}
               {/*</select>*/}
-              <button
-              className='search-btn'
-              type='submit'>
-                  Search
-              </button>
+              <div className='buttons'>
+                  <button
+                  className='search-btn'
+                  type='submit'>
+                      Search
+                  </button>
+                  <button
+                      className='reset-btn'
+                      onClick={()=>reset()}>
+                      Reset
+                  </button>
+              </div>
           </form>
             <div className='recipes'>
                 {recipes.map(recipe => (
