@@ -1,33 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-$color-1: #f8e791;
-$color-2:#8AA899;
-$color-3: #3d8e30;
-$color-4:#FFEFA9;
-$green-bright: #cbe8a7;
+$pale-yellow: #f8e791;
+$light-teal:#8AA899;
+$light-green:#ddecc5;
+$bright-green: #cbe8a7;
+$medium-green: #3d8e30;
+$dark-green:#1e5b15;
+$darkest-green: #0e3709;
+$orange-reset:#fab387;
 
 body{
-  //background: repeating-radial-gradient(circle, transparent, transparent 11.2px, #f6ffd2 11.2px, #f6ffd2 14.4px), repeating-radial-gradient(circle, transparent, transparent 11.2px, #f6ffd2 11.2px, #f6ffd2 14.4px), #d1ffca;
+  //background: repeating-radial-gradient(circle, transparent, transparent 11.2px, #f6ffd2 11.2px, #f6ffd2 14.4px), repeating-radial-gradient(circle, transparent, transparent 11.2px, #f6ffd2 11.2px, #f6ffd2 14.4px), #ffffff;
   //background-size: 64px 64px;
   //background-position: 0 0, 32px 32px, 64px 32px;
-  //background-color: #d1ffca;
-  background: repeating-radial-gradient(circle, transparent, transparent 11.2px, #f6ffd2 11.2px, #f6ffd2 14.4px), repeating-radial-gradient(circle, transparent, transparent 11.2px, #f6ffd2 11.2px, #f6ffd2 14.4px), #ffffff;
-  background-size: 64px 64px;
-  background-position: 0 0, 32px 32px, 64px 32px;
-  background-color: #ffffff;
+  //background-color: #ffffff;
 }
 
 .title{
+  width: 100%;
   font-size: 250%;
   color: #1e5b15;
-  background-color: #ddecc5;
+  background-color: $light-green;
   margin:auto;
   padding: 2%;
 }
@@ -36,6 +29,7 @@ h1{
   text-align: center;
   font-family: 'PT Sans', sans-serif;
 }
+//TODO: fix dropdown menu position
 
 form{
   width:100%;
@@ -46,19 +40,29 @@ form{
   //border:1px solid black;
   input{
     opacity: 90%;
-    border:.5px solid black;
-    background-color: #ddecc5;
+    border:.5px solid $dark-green;
     padding:.3rem;
-    border-radius:10px;
+    border-radius:5px;
     &:focus{
-      box-shadow:0px 0px 10px 2px $color-3;
+      border-radius: 15px;
+      box-shadow:0px 0px 5px 2.5px $dark-green;
       outline:none;
+      transition: .3s ease-in-out;
     }
   }
   select{
     width:40%;
     padding: .3rem;
-    border-radius:10px;
+    border:none;
+    border-radius:5px;
+    background-color: #dbefc0;
+    color:$darkest-green;
+    &:focus{
+      border-radius: 15px;
+      box-shadow:0px 0px 5px 2.5px $dark-green;
+      outline:none;
+      transition: .3s ease-in-out;
+    }
   }
   .filter-text-1{
     margin: 10px;
@@ -81,10 +85,10 @@ form{
     padding: .5rem;
     border-radius:10px;
     border: none;
-    background-color: $green-bright;
+    background-color: $bright-green;
   }
   .reset-btn{
-    background-color: #fab387;
+    background-color: $orange-reset;
     margin-bottom: -20px;
   }
 }
@@ -97,56 +101,64 @@ form{
   padding:2%;
   justify-content: center;
   font-family: 'Open Sans', sans-serif;
+  border:2px dashed blue;
 }
 
 .recipe-cont{
   text-align: center;
-  //border:1px solid $color-3;
+  //border:1px solid $medium-green;
   border-radius: 10px;
   margin:20px auto;
-  background-color:$green-bright;
-  img{
-    //aspect-ratio: 4/1;
-    border-radius: 10px;
-    object-fit: cover;
-    width:90%;
-    margin:10px auto;
-    margin-bottom:0;
-    border:1px double $color-3;
-  }
-
+  border:2px dashed red;
   a{
     text-decoration: none;
-    color:$color-3;
     padding: 5px;
+    img{
+      //aspect-ratio: 2/3;
+      //border-radius: 10px;
+      border-radius: 5px;
+      object-fit: cover;
+      width:90%;
+      //height:70%;
+      margin:10px auto;
+      margin-bottom:0;
+      border:.2px solid $medium-green;
+      &:hover{
+        border-radius: 15px;
+        box-shadow: 0 0 5px 2px $medium-green;
+      }
+    }
     h1{
+      text-align: left;
       font-size:130%;
-      padding-left:8px;
-      padding-right:8px;
-      color:black;
+      padding-left:1rem;
+      //padding-right:1rem;
     }
     span{
+      text-align: left;
+      font-size: medium;
       font-weight: bold ;
+      margin:auto;
       &:hover{
         text-decoration: underline;
       }
     }
+    &:hover{
+      color:red !important;
+    }
   }
-  a:hover{
-  }
+
 }
 
 .recipe-cont:hover{
-  transform: scale(1.1);
-  box-shadow:0px 0px 10px 2px $color-3;
+  //transform: scale(1.1);
+  //box-shadow:0px 0px 10px 2px $medium-green;
 }
 
-.recipe-info{
-  //border:1px solid black;
-  width:50%;
+
+.page-btns{
   text-align: center;
-  margin:0 auto;
-  font-size: medium;
+  margin:10px auto;
 }
 
 footer{
@@ -169,11 +181,11 @@ footer{
     display:flex;
     flex-wrap:wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   .recipe-cont{
-    width:30%;
+    width:300px;
     margin:20px auto;
     h1{
       font-size:medium;
@@ -191,5 +203,14 @@ footer{
   }
 
 
-
+//include in media query the limit for the title length...or simply fix the tile size!!!!
+}
+@media screen and (min-width: 1200px){
+  .recipes{
+    //margin:auto 0;
+  }
+  .recipe-cont{
+    width:25%;
+    margin: 10px;
+    }
 }
