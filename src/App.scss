@@ -43,6 +43,8 @@ form{
     border:.5px solid $dark-green;
     padding:.3rem;
     border-radius:5px;
+    font-size: 110%;
+    padding: .5rem;
     &:focus{
       border-radius: 15px;
       box-shadow:0px 0px 5px 2.5px $dark-green;
@@ -52,6 +54,7 @@ form{
   }
   select{
     width:40%;
+    font-size: 100%;
     padding: .3rem;
     border:none;
     border-radius:5px;
@@ -159,6 +162,18 @@ form{
 .page-btns{
   text-align: center;
   margin:10px auto;
+  #zero, #prev,#next{
+    padding: .8rem;
+    margin: .5rem;
+    font-size: 150%;
+    border:none;
+    border-radius: 5px;
+    background-color: $light-green;
+    &:hover, &:active{
+      border-radius: 15px;
+      box-shadow: 0 0 5px 2px $medium-green;
+    }
+  }
 }
 
 footer{

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+
+.about{
+  height: 100vh;
+  h1, h2{
+    font-family: "PT Sans", sans-serif;
+    text-align: center;
+  }
+  h1{
+    font-size: 200%;
+  }
+  width:50%;
+  margin:auto;
+  padding:1rem;
+  font-size: 120%;
+  p{
+    margin:auto;
+    line-height: 2.5rem;
+    text-align: justify;
+  }
+  .signature{
+    margin-left:8%;
+    margin-top:2rem;
+    font-family: 'Comforter', cursive;
+    font-size: 250%;
+  }
+}
