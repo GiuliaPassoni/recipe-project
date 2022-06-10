@@ -1,0 +1,24 @@
+@use 'variables';
+
+.products{
+  height: 100vh;
+  h1{
+    font-family: "PT Sans", sans-serif;
+    text-align: center;
+  }
+  h1{
+    font-size: 200%;
+    color:variables.$dark-green;
+  }
+  width:50%;
+  margin:auto;
+  padding:1rem;
+  font-size: 120%;
+  p{
+    margin:auto;
+    padding-bottom: 1rem;
+    line-height: 2rem;
+    //text-align: justify;
+    letter-spacing: normal;
+  }
+}

@@ -1,4 +1,6 @@
+@use 'variables';
 @import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+
 
 .about{
   height: 100vh;
@@ -8,6 +10,10 @@
   }
   h1{
     font-size: 200%;
+    color:variables.$dark-green;
+  }
+  h2{
+    color:variables.$darkest-green;
   }
   width:50%;
   margin:auto;
@@ -15,13 +21,27 @@
   font-size: 120%;
   p{
     margin:auto;
-    line-height: 2.5rem;
-    text-align: justify;
+    padding-bottom: 1rem;
+    line-height: 2rem;
+    //text-align: justify;
+    letter-spacing: normal;
+    .exc{
+      font-weight: bold;
+    }
+    .notexc{
+      font-size: 80%;
+    }
+  }
+  a {
+    text-decoration: none;
+
+    color:variables.$dark-green ;
   }
   .signature{
-    margin-left:8%;
+    margin-right:18%;
     margin-top:2rem;
     font-family: 'Comforter', cursive;
     font-size: 250%;
+    float: right;
   }
 }
