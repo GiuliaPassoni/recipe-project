@@ -1,10 +1,9 @@
-import '../styling/App.scss';
+import '../styling/Filterpage.scss';
 import React, {useEffect, useState} from "react";
 import Recipe from "./Recipe";
 import filters from "./../filters";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro' //
-// import About from './components/About';
 
 const FilterPage = () => {
     //API call details

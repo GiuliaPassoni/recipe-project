@@ -1,4 +1,4 @@
-import './styling/App.scss';
+import './styling/Filterpage.scss';
 import React, {useEffect, useState} from "react";
 // import Recipe from "./Recipe";
 import filters from "./filters";

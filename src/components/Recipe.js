@@ -16,8 +16,8 @@ const Recipe = ({title,calories,image,sourceurl}) => {
                 <img src={image} alt={title} loading="lazy"/>
                 <h1>{title.length < 20 ? `${title}` : `${title.substring(0, 25)}...`}</h1>
                 {/*<div className='recipe-info'>*/}
-                    {/*<p>{Math.floor(calories)}</p>*/}
-                    <span>Source</span>
+                {/*    <span>Calories: {Math.floor(calories)}</span>*/}
+                    {/*<span>Source</span>*/}
                 {/*</div>*/}
             </a>
         </div>
