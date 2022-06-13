@@ -1,4 +1,5 @@
 import React from "react";
+import '../styling/Filterpage.scss';
 
 const Recipe = ({title,calories,image,sourceurl}) => {
     // if (title.length > 20){
@@ -13,7 +14,7 @@ const Recipe = ({title,calories,image,sourceurl}) => {
         <div className='recipe-cont'>
             <a href={sourceurl} target='_blank' rel="noreferrer">
                 {/*<h1>{title}</h1>*/}
-                <img src={image} alt={title} loading="lazy"/>
+                <img src={image} alt={title} loading="lazy" className='recipeImg'/>
                 <h1>{title.length < 20 ? `${title}` : `${title.substring(0, 25)}...`}</h1>
                 {/*<div className='recipe-info'>*/}
                 {/*    <span>Calories: {Math.floor(calories)}</span>*/}
