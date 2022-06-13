@@ -3,7 +3,7 @@ import React, {useEffect, useState} from "react";
 import Recipe from "./Recipe";
 import filters from "./../filters";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro' //
+import { solid} from '@fortawesome/fontawesome-svg-core/import.macro' //
 
 const FilterPage = () => {
     //API call details
@@ -201,7 +201,6 @@ const FilterPage = () => {
                     <button id='next' onClick={nextPage}><FontAwesomeIcon icon={solid('angle-right')} /></button>
                 </div>
                 : ''}
-            <footer>Coded by Giulia Passoni 2022</footer>
         </div>
     );
 }

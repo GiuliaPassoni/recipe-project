@@ -1,24 +1,76 @@
 @use 'variables';
 
 .products{
-  height: 100vh;
-  h1{
-    font-family: "PT Sans", sans-serif;
-    text-align: center;
-  }
-  h1{
-    font-size: 200%;
-    color:variables.$dark-green;
-  }
   width:50%;
   margin:auto;
   padding:1rem;
   font-size: 120%;
-  p{
-    margin:auto;
-    padding-bottom: 1rem;
-    line-height: 2rem;
-    //text-align: justify;
-    letter-spacing: normal;
+  //height: 100vh;
+  h1{
+    font-family: "PT Sans", sans-serif;
+    text-align: center;
+    font-size: 200%;
+    color: variables.$dark-green;
+  }
+  h3{
+    font-family: "PT Sans", sans-serif;
+    color: variables.$dark-green;
+    text-align: center;
+
   }
 }
+.intro{
+  margin:auto;
+  padding-bottom: 1rem;
+  line-height: 2rem;
+  //text-align: justify;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.productsAll{
+  display: flex;
+  flex-wrap: wrap;
+  a{
+    width: 30%;
+    max-width: 450px;
+    min-width: 250px;
+    max-height: 400px;
+    min-height:200px;
+    margin: auto;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    &:hover{
+      color: variables.$dark-green;
+      transform: scale(1.1);
+    }
+  }
+  img{
+    max-width: 300px;
+    min-width:200px;
+    width: 90%;
+    max-height: 350px;
+    min-height:150px;
+    height: 250px;
+    //object-fit: cover;
+    border-radius: 5px;
+    //margin: 10px auto;
+    //margin-bottom: 0;
+    //border: .2px solid variables.$medium-green;
+    &:hover{
+      box-shadow: 0 0 5px 2px silver;
+    }
+  }
+  div {
+    padding-left: 1rem;
+    margin: auto;
+    font-weight: lighter;
+  }
+}
+

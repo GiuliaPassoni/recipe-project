@@ -4,21 +4,31 @@
 
 .about{
   height: 100vh;
+  width:50%;
+  margin:auto;
+  padding:1rem;
+  font-size: 120%;
   h1, h2{
     font-family: "PT Sans", sans-serif;
     text-align: center;
   }
   h1{
     font-size: 200%;
-    color:variables.$dark-green;
+    color: variables.$dark-green;
   }
   h2{
-    color:variables.$darkest-green;
+    color: variables.$darkest-green;
   }
-  width:50%;
-  margin:auto;
-  padding:1rem;
-  font-size: 120%;
+ //.txt-img{
+ //   display: flex;
+ // }
+ // .par-cont{
+ //   width: 20%;
+ // }
+ // #cooking{
+ //   width: 20%;
+ // }
+
   p{
     margin:auto;
     padding-bottom: 1rem;
@@ -35,7 +45,7 @@
   a {
     text-decoration: none;
 
-    color:variables.$dark-green ;
+    color: variables.$dark-green ;
   }
   .signature{
     margin-right:18%;

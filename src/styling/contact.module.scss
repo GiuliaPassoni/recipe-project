@@ -1,24 +1,55 @@
 @use 'variables';
 
 .contact{
-  height: 100vh;
-  h1{
+  color: black;
+  margin:auto;
+  padding:1rem;
+  font-size: 120%;
+
+  h1,h3{
     font-family: "PT Sans", sans-serif;
     text-align: center;
   }
   h1{
     font-size: 200%;
-    color:variables.$dark-green;
+    color: variables.$dark-green;
   }
+  h3{
+    color: variables.$darkest-green;
+  }
+
+}
+.feedback{
   width:50%;
   margin:auto;
-  padding:1rem;
-  font-size: 120%;
-  p{
-    margin:auto;
-    padding-bottom: 1rem;
-    line-height: 2rem;
-    //text-align: justify;
-    letter-spacing: normal;
+  padding-bottom: 1rem;
+  line-height: 2rem;
+  //text-align: justify;
+  letter-spacing: normal;
+}
+
+.findUs{
+  h3{
+    margin-top: -10px;
+  }
+}
+.flexbox{
+  width: 70%;
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  .maptext{
+    width: 30%;
+    text-align: justify;
+    padding-right: 1rem;
+  }
+  iframe{
+    width: 40%;
+    max-width: 500px;
+    min-width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+    border: none;
+    margin-left: 20px;
   }
 }

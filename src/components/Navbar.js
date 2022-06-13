@@ -2,9 +2,9 @@ import React from 'react';
 import { Link} from "react-router-dom";
 
 import style from '../styling/navbar.module.scss';
-import logo from './logo.png';
-import decoLeft from './decoRight.png';
-import decoRight from './decoLeft.png';
+import logo from '../assets/logo.png';
+import decoLeft from '../assets/decoRight.png';
+import decoRight from '../assets/decoLeft.png';
 
 export default function Navbar(){
     return(
@@ -13,7 +13,7 @@ export default function Navbar(){
                 <li><Link to='/'>About Us</Link></li>
                 <li><Link to='/recipes'>Recipes</Link></li>
                 <li id='nav-logo'>
-                    <img id='logo' src={logo} alt='logo' height={100} width={100}/>
+                    <Link to='/'><img id='logo' src={logo} alt='logo' height={100} width={100}/></Link>
                 </li>
                 <li><Link to='/products'>Shop</Link></li>
                 <li><Link to='/contact'>Contact Us</Link></li>
