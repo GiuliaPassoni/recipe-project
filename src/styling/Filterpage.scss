@@ -28,6 +28,7 @@ form{
   font-family: 'Open Sans', sans-serif;
   //border:1px solid black;
   input{
+    z-index: -1;
     opacity: 90%;
     border:.5px solid variables.$dark-green;
     border-radius:5px;
@@ -226,6 +227,6 @@ footer{
     margin:10px auto;
     //width: 30%;
     min-width: 250px;
-    max-width: 350px;
+    max-width: 300px;
   }
 }

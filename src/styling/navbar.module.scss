@@ -7,7 +7,7 @@
     right: 0;
     bottom: 0;
     margin-bottom: 80%;
-    ul{
+    .navMenu ul{
         list-style: none;
         border-top:3px double variables.$dark-green;
         border-bottom:3px double variables.$dark-green;
@@ -25,6 +25,32 @@
     a{
         text-decoration: none;
         color: variables.$dark-green;
+    }
+    .hamburger{
+        border: 0;
+        height: 40px;
+        width: 40px;
+        padding: 0.5rem;
+        color: variables.$medium-green;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+        // positions the icon to the right and center aligns it vertically
+        position: absolute;
+        top: 3%;
+        right: 0;
+        top: 25px;
+        right: 25px;
+        //transform: translateY(-50%);
+
+        display: none;
+    }
+    .hamburger:hover {
+        border-radius: 20%;
+        background-color: variables.$medium-green;
+        color: variables.$light-green;
+    }
+    .mobileLogo{
+        display: hidden;
     }
 
 }
@@ -50,7 +76,7 @@
 @media screen and (max-width: 750px){
     .navbar{
         width: 90%;
-        ul{
+        .navMenu ul{
             width: 100%;
             margin-top:0;
             border-top: none;
@@ -59,21 +85,81 @@
     #navbar-img{
         display: none;
     }
+    .hamburger{}
 }
 
-@media screen and (max-width: 350px){
-    .navbar{
-        img{
-            width: 50%;
+//@media only screen and (max-width: 350px){
+//    .navbar{
+//        img{
+//            width: 50%;
+//        }
+//        width: 90%;
+//        ul{
+//            width: 100%;
+//            margin-top:0;
+//            border-top: none;
+//        }
+//    }
+//    #navbar-img{
+//        display: none;
+//    }
+//
+//}
+
+@media screen and (max-width: 500px){
+    .navbar {
+        width: 100%;
+        height: 10%;
+        background-color: variables.$bright-green;
+        .mobileLogo{
+            display: block;
+            text-align: left;
         }
-        width: 90%;
-        ul{
+        .hamburger {
+            display: block;
+        }
+        .navMenu ul{
+            display: none;
+        }
+        .navMenu ul {
+            // navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar)
+            position: absolute;
+            top: 70px;
+            left: 0;
+            // stacks the li tags vertically
+            flex-direction: column;
+            // makes menu span full height and width
             width: 100%;
-            margin-top:0;
-            border-top: none;
+            //height: calc(100vh - 60px);
+            height: 39vh;
+            background: linear-gradient(0deg, white, variables.$bright-green) ;
+            //border-top: 1px solid black;
+            z-index: 1;
+            padding: 0;
+        }
+        li {
+            // centers link text and strips off margin
+            text-align: center;
+            margin: 0;
+            color: black;
+            // increases the surface area of the anchor tag to span the full width of the menu
+            width: 100%;
+            padding: 1.5rem 0;
+        }
+        li:hover {
+            background-color: #CBE8A777 ;
+        }
+        #nav-logo{
+            display: none;
+        }
+        .navMenu.expanded ul{
+            display: block;
+        }
+        .link{
+            //background-color: red;
+            padding: 1.5rem 100px;
+            margin: 0;
         }
     }
-    #navbar-img{
-        display: none;
-    }
+
 }

@@ -14,7 +14,7 @@ const Recipe = ({title,calories,image,sourceurl}) => {
         <div className='recipe-cont'>
             <a href={sourceurl} target='_blank' rel="noreferrer">
                 {/*<h1>{title}</h1>*/}
-                <img src={image} alt={title} loading="lazy" className='recipeImg'/>
+                <img src={image} alt={title} loading="eager" className='recipeImg'/>
                 <h1>{title.length < 20 ? `${title}` : `${title.substring(0, 25)}...`}</h1>
                 {/*<div className='recipe-info'>*/}
                 {/*    <span>Calories: {Math.floor(calories)}</span>*/}
