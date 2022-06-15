@@ -2,5 +2,15 @@
 
 .footer{
   text-align: center;
-  margin:0 auto 20px auto;
+  display: block;
+  padding: .5rem;
+  clear: both;
+}
+
+@media screen and (max-width: 550px){
+  .footer{
+    //border: 1px solid red;
+    //display: block;
+    margin-top: 50px;
+  }
 }

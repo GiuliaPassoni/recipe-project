@@ -1,6 +1,12 @@
 import React from "react";
 import '../styling/Filterpage.scss';
 
+// function SkeletonImg(){
+//     return(
+//         <div className='skeleton'/>
+//     )
+// }
+
 const Recipe = ({title,calories,image,sourceurl}) => {
     // if (title.length > 20){
     //     title = title.slice(0,20)+'...'

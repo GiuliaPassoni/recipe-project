@@ -1,4 +1,5 @@
 @use 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
 
 .navbar{
     position: absolute;
@@ -6,7 +7,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    margin-bottom: 80%;
+    z-index: -1;
+    //margin-bottom: 80%;
     .navMenu ul{
         list-style: none;
         border-top:3px double variables.$dark-green;
@@ -28,20 +30,18 @@
     }
     .hamburger{
         border: 0;
-        height: 40px;
-        width: 40px;
+        font-size: 30px;
+        height: 50px;
+        width: 50px;
         padding: 0.5rem;
         color: variables.$medium-green;
         cursor: pointer;
         transition: background-color 0.2s ease-in-out;
         // positions the icon to the right and center aligns it vertically
         position: absolute;
-        top: 3%;
-        right: 0;
-        top: 25px;
-        right: 25px;
+        top: 20px;
+        right: 20px;
         //transform: translateY(-50%);
-
         display: none;
     }
     .hamburger:hover {
@@ -50,7 +50,10 @@
         color: variables.$light-green;
     }
     .mobileLogo{
-        display: hidden;
+        transform:scale(1.1);
+        display: none;
+        position: absolute;
+        left: 0;
     }
 
 }
@@ -67,46 +70,17 @@
     z-index:-1;
     #deco-left{
         margin-left: -50px;
+        margin-top: -50px;
+        transform: scale(1.2);
     }
     #deco-right{
-
+        margin-right:20px;
+        //margin-top:-2px;
+        //transform:rotate(-10deg);
     }
 }
 
-@media screen and (max-width: 750px){
-    .navbar{
-        width: 90%;
-        .navMenu ul{
-            width: 100%;
-            margin-top:0;
-            border-top: none;
-        }
-    }
-    #navbar-img{
-        display: none;
-    }
-    .hamburger{}
-}
-
-//@media only screen and (max-width: 350px){
-//    .navbar{
-//        img{
-//            width: 50%;
-//        }
-//        width: 90%;
-//        ul{
-//            width: 100%;
-//            margin-top:0;
-//            border-top: none;
-//        }
-//    }
-//    #navbar-img{
-//        display: none;
-//    }
-//
-//}
-
-@media screen and (max-width: 500px){
+@media screen and (max-width: 550px){
     .navbar {
         width: 100%;
         height: 10%;
@@ -119,6 +93,7 @@
             display: block;
         }
         .navMenu ul{
+            border-top: none;
             display: none;
         }
         .navMenu ul {
@@ -126,14 +101,11 @@
             position: absolute;
             top: 70px;
             left: 0;
-            // stacks the li tags vertically
             flex-direction: column;
-            // makes menu span full height and width
             width: 100%;
             //height: calc(100vh - 60px);
-            height: 39vh;
+            //height: 39vh;
             background: linear-gradient(0deg, white, variables.$bright-green) ;
-            //border-top: 1px solid black;
             z-index: 1;
             padding: 0;
         }
@@ -161,5 +133,80 @@
             margin: 0;
         }
     }
+    #navbar-img{
+        display: none;
+    }
 
+}
+
+@media screen and (min-width: 551px) and (max-width: 700px){
+    .navbar{
+        width: 100%;
+        margin-bottom: 0;
+        .navMenu ul{
+            width: 90%;
+            margin-top:0;
+            border-top: none;
+            position: absolute;
+            //top: 0;
+        }
+    }
+    #navbar-img{
+        z-index:-1;
+        transform:scale(.8);
+        position: relative;
+        #deco-left{
+            //margin-top: 17.5%;
+            margin-left: -10rem;
+            margin-top: 7rem;
+        }
+        #deco-right{
+            margin-top: 4.5rem;
+            margin-right: -5rem;
+        }
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px){
+    .navMenu ul{
+        width: 90%;
+        li {
+            font-size: 90%;
+        }
+    }
+    #navbar-img{
+        z-index:-1;
+        transform:scale(.8);
+        //position: relative;
+        #deco-left{
+            //margin-top: 17.5%;
+            margin-left: -21%;
+        }
+        #deco-right{
+            margin-top: -3rem;
+            margin-right: -12.5%;
+        }
+    }
+}
+
+@media screen and (min-width: 1500px){
+    .navbar{
+        .navMenu ul {
+            width: 70%;
+            li{
+                font-size: 150%;
+            }
+        }
+    }
+    #navbar-img{
+        transform:scale(1.1);
+        z-index:-1;
+        #deco-left{
+            margin-left: 1rem;
+        }
+        #deco-right{
+            margin-top: 0;
+            margin-right: 7rem;
+        }
+    }
 }

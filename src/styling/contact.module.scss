@@ -3,6 +3,7 @@
 .contact{
   color: black;
   margin:auto;
+  margin-top: 120px;
   padding:1rem;
   font-size: 120%;
 
@@ -51,5 +52,78 @@
     border-radius: 5px;
     border: none;
     margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contact{
+    margin-top: 15%;
+    width: 90%;
+    font-size: 100%;
+    .feedback{
+      width: 80%;
+    }
+    .findUs{
+      width: 100%;
+      justify-content: center;
+      .flexbox{
+        flex-direction: column;
+        width: 80%;
+        .maptext{
+          width: 100%;
+          margin: 0;
+        }
+        iframe{
+          width: 90%;
+          margin:auto;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 701px) and (max-width: 900px){
+  .contact {
+    width: 100%;
+    text-align: justify;
+    .feedback {
+      width: 70%;
+    }
+    .findUs{
+      .flexbox {
+        flex-direction: column;
+        width: 70%;
+
+        .maptext {
+          width: 100%;
+          margin: 0;
+        }
+
+        iframe {
+          width: 90%;
+          margin:auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px){
+  .findUs{
+    .flexbox {
+      flex-direction: column;
+      width: 50%;
+
+      .maptext {
+        width: 100%;
+        margin: 0;
+      }
+
+      iframe {
+        width: 90%;
+        margin:auto;
+      }
+    }
   }
 }

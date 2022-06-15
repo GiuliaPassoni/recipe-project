@@ -1,4 +1,4 @@
-import './styling/Filterpage.scss';
+import './styling/app.module.scss';
 import React from "react";
 import Navbar from './components/Navbar';
 import About from './components/About';
@@ -19,8 +19,8 @@ const App = () => {
                     <Route path='/products' element={<Products/>} />
                     <Route path='/contact' element={<Contact/>} />
                 </Routes>
+                <Footer/>
             </div>
-            <Footer/>
         </>
     )
 }

@@ -3,6 +3,7 @@
 .products{
   width:50%;
   margin:auto;
+  margin-top: 120px;
   padding:1rem;
   font-size: 120%;
   //height: 100vh;
@@ -74,3 +75,32 @@
   }
 }
 
+@media screen and (max-width: 550px) {
+  .products{
+    margin-top: 15%;
+    width: 70%;
+    font-size: 100%;
+  }
+  .intro{
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 700px){
+  .products{
+    margin-top:8rem;
+    width: 60%;
+    font-size: 100%;
+  }
+  .intro{
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px){
+  .products{
+  .intro{
+    text-align: justify;
+  }
+  }
+}
