@@ -83,8 +83,10 @@
 @media screen and (max-width: 550px){
     .navbar {
         width: 100%;
+        min-width: 300px;
         height: 10%;
         background-color: variables.$bright-green;
+        z-index:1;
         .mobileLogo{
             display: block;
             text-align: left;
