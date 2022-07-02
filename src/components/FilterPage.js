@@ -56,9 +56,9 @@ const FilterPage = () => {
         const link = 'https://api.edamam.com/api/recipes/v2?' + params;
         const a = await fetch(link);
         //use json format to handle response obj (an array) more easily
-        console.log('a before json',a)
+        // console.log('a before json',a)
         const b = await a.json();
-        console.log('a after json',b)
+        // console.log('a after json',b)
         //change the state
         setRecipes(b.hits);
 
@@ -71,7 +71,7 @@ const FilterPage = () => {
     }
 
     const getLink = async (link) => {
-        console.log(link);
+        // console.log(link);
         const a = await fetch(link);
         const b = await a.json();
         //console.log(b,'test text')
