@@ -7,7 +7,7 @@ import '../styling/Filterpage.scss';
 //     )
 // }
 
-const Recipe = ({title,calories,image,sourceurl}) => {
+const Recipe = ({title,image,sourceurl}) => {
     // if (title.length > 20){
     //     title = title.slice(0,20)+'...'
     // }

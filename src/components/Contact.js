@@ -25,11 +25,12 @@ export default function Contact(){
                 <div className={style.flexbox}>
                     <div className={style.maptext}>
                         <p>Would you like to see us in person?</p>
-                        <p>Alas, this may not be possible. However, to cheer you up, we recommend to check out this fabulous Dutch apple cake at <a href='http://www.winkel43.nl/'>Winkel 43</a>*.</p>
+                        <p>Alas, this may not be possible. However, to cheer you up, we recommend to check out this fabulous Dutch apple cake at <a href='https://www.winkel43.nl/' rel='_noreferrer'>Winkel 43</a>*.</p>
                         <br/>
                         <p>*<strong>Disclaimer</strong>: they are also not a sponsor.</p>
                     </div>
                     <iframe
+                        title='Map'
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28360.327334451576!2d4.881604541568182!3d52.38200822981759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe3db9b09718b7bc2!2sWinkel%2043!5e0!3m2!1sen!2suk!4v1655112194828!5m2!1sen!2suk"
                         // width="600" height="450" style="border:0;" allowFullScreen="" loading="lazy"
                         // referrerPolicy="no-referrer-when-downgrade"

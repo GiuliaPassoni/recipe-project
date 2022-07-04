@@ -17,10 +17,14 @@ export default function Products(){
                     <div className='prod-desc'>A lot of patience</div>
                 </a>
                 <a href='https://www.etsy.com/uk/listing/706316840/chef-hedgehog-dog-toy-large-cute-chubby'>
-                    <img alt='Image of cute plushy chef to represent good company to share food with' src='https://i.etsystatic.com/14143404/r/il/89ac6e/3351698606/il_794xN.3351698606_iveb.jpg'/>
+                    {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
+                    <img
+                        alt='Image of cute plushy chef to represent good company to share food with'
+                        src='https://i.etsystatic.com/14143404/r/il/89ac6e/3351698606/il_794xN.3351698606_iveb.jpg'/>
                     <div className='prod-desc'>Friends to eat with</div>
                 </a>
                 <a href='https://open.spotify.com/playlist/47Hj1ZIkQnyJInPIBjcw0B'>
+                    {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
                     <img alt='Image of a Spotify cooking playlist' src='https://i.scdn.co/image/ab67706c0000bebbeec4b5eaa5f9893e6df4e25b'/>
                     <div className='prod-desc'>A great soundtrack <FontAwesomeIcon icon={brands('spotify')}/></div>
                 </a>

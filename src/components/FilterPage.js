@@ -73,9 +73,9 @@ const FilterPage = () => {
     const getLink = async (link) => {
         // console.log(link);
         const a = await fetch(link);
-        const b = await a.json();
-        //console.log(b,'test text')
-        return b;
+        // const b = await a.json();
+        // return b;
+        return await a.json();
     }
     //
 
